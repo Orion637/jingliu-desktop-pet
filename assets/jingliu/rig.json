@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "viewport": [
+    -340,
+    -180,
+    1640,
+    1840
+  ],
+  "coordinates": "viewer-left/right, master-image coordinates, degrees clockwise",
+  "notes": [
+    "原 PNG 保留；按 alpha 包围盒在运行时取图。",
+    "袖带由右臂带动；裙摆保持紫色。",
+    "18 bones; 4 weighted meshes; procedural neck and eyelids."
+  ],
+  "bones": [
+    {
+      "id": "root",
+      "parent": null,
+      "pivot": [
+        440,
+        1470
+      ]
+    },
+    {
+      "id": "torso",
+      "parent": "root",
+      "pivot": [
+        440,
+        840
+      ]
+    },
+    {
+      "id": "neck",
+      "parent": "torso",
+      "pivot": [
+        430,
+        650
+      ]
+    },
+    {
+      "id": "head",
+      "parent": "neck",
+      "pivot": [
+        430,
+        611
+      ]
+    },
+    {
+      "id": "ponytail_root",
+      "parent": "head",
+      "pivot": [
+        581,
+        71
+      ]
+    },
+    {
+      "id": "ponytail_mid",
+      "parent": "ponytail_root",
+      "pivot": [
+        735,
+        471
+      ]
+    },
+    {
+      "id": "ponytail_tip",
+      "parent": "ponytail_mid",
+      "pivot": [
+        790,
+        841
+      ]
+    },
+    {
+      "id": "arm_left",
+      "parent": "torso",
+      "pivot": [
+        340,
+        690
+      ]
+    },
+    {
+      "id": "arm_right",
+      "parent": "torso",
+      "pivot": [
+        530,
+        688
+      ]
+    },
+    {
+      "id": "sleeve_root",
+      "parent": "arm_right",
+      "pivot": [
+        590,
+        811
+      ]
+    },
+    {
+      "id": "sleeve_mid",
+      "parent": "sleeve_root",
+      "pivot": [
+        655,
+        1010
+      ]
+    },
+    {
+      "id": "sleeve_tip",
+      "parent": "sleeve_mid",
+      "pivot": [
+        755,
+        1190
+      ]
+    },
+    {
+      "id": "skirt_root",
+      "parent": "torso",
+      "pivot": [
+        440,
+        1060
+      ]
+    },
+    {
+      "id": "skirt_tip",
+      "parent": "skirt_root",
+      "pivot": [
+        600,
+        1220
+      ]
+    },
+    {
+      "id": "leg_left",
+      "parent": "torso",
+      "pivot": [
+        356,
+        1090
+      ]
+    },
+    {
+      "id": "leg_right",
+      "parent": "torso",
+      "pivot": [
+        466,
+        1097
+      ]
+    },
+    {
+      "id": "tassel",
+      "parent": "torso",
+      "pivot": [
+        480,
+        935
+      ]
+    },
+    {
+      "id": "weapon",
+      "parent": "arm_left",
+      "pivot": [
+        164,
+        943
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "id": "ponytail",
+      "file": "parts/ponytail.png",
+      "bone": "ponytail_root",
+      "rect": [
+        469,
+        15,
+        549,
+        1102
+      ],
+      "z": 10,
+      "mesh": {
+        "rows": 14,
+        "columns": 2,
+        "chain": [
+          [
+            71,
+            "ponytail_root"
+          ],
+          [
+            471,
+            "ponytail_mid"
+          ],
+          [
+            906,
+            "ponytail_tip"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "skirt",
+      "file": "parts/skirt_back.png",
+      "bone": "skirt_root",
+      "rect": [
+        199,
+        1042,
+        777,
+        296
+      ],
+      "z": 20,
+      "mesh": {
+        "rows": 7,
+        "columns": 2,
+        "chain": [
+          [
+            1060,
+            "skirt_root"
+          ],
+          [
+            1260,
+            "skirt_tip"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "leg_left",
+      "file": "parts/leg_viewer_left.png",
+      "bone": "leg_left",
+      "rect": [
+        257,
+        1058,
+        193,
+        397
+      ],
+      "z": 25
+    },
+    {
+      "id": "leg_right",
+      "file": "parts/leg_viewer_right.png",
+      "bone": "leg_right",
+      "rect": [
+        392,
+        1077,
+        174,
+        446
+      ],
+      "z": 26
+    },
+    {
+      "id": "sleeve",
+      "file": "parts/sleeve_tail_viewer_right.png",
+      "bone": "sleeve_root",
+      "rect": [
+        555,
+        805,
+        300,
+        490
+      ],
+      "z": 30,
+      "anchor_source": [
+        350,
+        350
+      ],
+      "anchor_world": [
+        590,
+        811
+      ],
+      "mesh": {
+        "rows": 16,
+        "columns": 2,
+        "chain": [
+          [
+            811,
+            "sleeve_root"
+          ],
+          [
+            1010,
+            "sleeve_mid"
+          ],
+          [
+            1250,
+            "sleeve_tip"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neck",
+      "file": null,
+      "bone": "neck",
+      "rect": [
+        397,
+        606,
+        77,
+        68
+      ],
+      "z": 39,
+      "procedural_shape": "neck",
+      "mesh": {
+        "rows": 6,
+        "columns": 2,
+        "chain": [
+          [
+            612,
+            "head"
+          ],
+          [
+            650,
+            "neck"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "torso",
+      "file": "parts/torso.png",
+      "bone": "torso",
+      "rect": [
+        142,
+        615,
+        588,
+        545
+      ],
+      "z": 40
+    },
+    {
+      "id": "sword_slender",
+      "file": "weapons/sword_slender_chibi.png",
+      "bone": "weapon",
+      "rect": [
+        150,
+        540,
+        90,
+        480
+      ],
+      "z": 49,
+      "rest_rotation": -135,
+      "rest_pivot": [
+        164,
+        943
+      ],
+      "grip_source": [
+        512,
+        1190
+      ],
+      "grip_world": [
+        164,
+        943
+      ],
+      "texture_scale": 0.34,
+      "compact_handle": {
+        "start": 1080,
+        "compression": 0.55,
+        "taper": 0.72
+      },
+      "weapon": "slender"
+    },
+    {
+      "id": "sword_ice",
+      "file": "weapons/sword_ice_chibi.png",
+      "bone": "weapon",
+      "rect": [
+        109,
+        535,
+        185,
+        500
+      ],
+      "z": 49,
+      "rest_rotation": -135,
+      "rest_pivot": [
+        164,
+        943
+      ],
+      "grip_source": [
+        512,
+        1210
+      ],
+      "grip_world": [
+        164,
+        943
+      ],
+      "texture_scale": 0.34,
+      "compact_handle": {
+        "start": 1100,
+        "compression": 0.55,
+        "taper": 0.72
+      },
+      "weapon": "ice"
+    },
+    {
+      "id": "arm_left",
+      "file": "parts/arm_viewer_left.png",
+      "bone": "arm_left",
+      "rect": [
+        114,
+        674,
+        239,
+        304
+      ],
+      "z": 45
+    },
+    {
+      "id": "grip_fingers",
+      "file": "parts/arm_viewer_left.png",
+      "bone": "arm_left",
+      "rect": [
+        114,
+        674,
+        239,
+        304
+      ],
+      "z": 50,
+      "mask_source": [
+        [
+          [
+            305,
+            1045
+          ],
+          [
+            335,
+            1020
+          ],
+          [
+            376,
+            1025
+          ],
+          [
+            397,
+            1050
+          ],
+          [
+            378,
+            1076
+          ],
+          [
+            378,
+            1108
+          ],
+          [
+            346,
+            1129
+          ],
+          [
+            307,
+            1120
+          ],
+          [
+            295,
+            1090
+          ]
+        ],
+        [
+          [
+            395,
+            981
+          ],
+          [
+            442,
+            994
+          ],
+          [
+            440,
+            1056
+          ],
+          [
+            414,
+            1092
+          ],
+          [
+            385,
+            1111
+          ],
+          [
+            375,
+            1082
+          ],
+          [
+            387,
+            1047
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "arm_right",
+      "file": "parts/arm_viewer_right.png",
+      "bone": "arm_right",
+      "rect": [
+        337,
+        684,
+        285,
+        203
+      ],
+      "z": 55
+    },
+    {
+      "id": "tassel",
+      "file": "parts/tassel.png",
+      "bone": "tassel",
+      "rect": [
+        466,
+        900,
+        172,
+        134
+      ],
+      "z": 60
+    },
+    {
+      "id": "head",
+      "file": "parts/head.png",
+      "bone": "head",
+      "rect": [
+        72,
+        58,
+        702,
+        646
+      ],
+      "z": 65
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "file": "processed\\jingliu_cutout_refined_high_ponytail.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.4317,
+    "nearly_opaque_fraction": 0.5287,
+    "visible_bbox_alpha_gt_127": [
+      21,
+      9,
+      1018,
+      1524
+    ],
+    "sha256": "2f39e16e9cb67e016c5d93a6be7ebaffad255c74998474744eff3969ab43d443",
+    "png_verified": true
+  },
+  {
+    "file": "weapons\\sword_slender_chibi.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.8995,
+    "nearly_opaque_fraction": 0.0884,
+    "visible_bbox_alpha_gt_127": [
+      378,
+      53,
+      646,
+      1471
+    ],
+    "sha256": "fbdc991deeb3572bbbb170cc0e74c50df9651dfa73bf69eead2ea515aa384164",
+    "png_verified": true
+  },
+  {
+    "file": "weapons\\sword_ice_chibi.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.7995,
+    "nearly_opaque_fraction": 0.1803,
+    "visible_bbox_alpha_gt_127": [
+      241,
+      31,
+      784,
+      1506
+    ],
+    "sha256": "968d11ba67022ff2f04ce840786124e1d3068e6e395f8c4bdb435c7423aaa5d0",
+    "png_verified": true
+  }
+]
