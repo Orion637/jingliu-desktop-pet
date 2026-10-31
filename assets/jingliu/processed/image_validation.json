@@ -1,0 +1,28 @@
+{
+  "file": "jingliu_cutout_refined_high_ponytail.png",
+  "size": [
+    1024,
+    1536
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "alpha_zero_pixels": 679019,
+  "alpha_zero_fraction": 0.4317086537679036,
+  "interior_alpha_250_to_255_fraction": 0.5286820729573568,
+  "bbox_alpha_gt_127": [
+    21,
+    9,
+    1018,
+    1524
+  ],
+  "bbox_alpha_gt_240": [
+    28,
+    9,
+    1017,
+    1523
+  ],
+  "png_verified": true
+}
