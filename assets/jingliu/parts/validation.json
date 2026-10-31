@@ -1,0 +1,182 @@
+[
+  {
+    "name": "arm_viewer_left",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.8483,
+    "bbox": [
+      232,
+      227,
+      836,
+      1167
+    ]
+  },
+  {
+    "name": "arm_viewer_right",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.8896,
+    "bbox": [
+      204,
+      493,
+      864,
+      953
+    ]
+  },
+  {
+    "name": "head",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.6128,
+    "bbox": [
+      4,
+      76,
+      1010,
+      1002
+    ]
+  },
+  {
+    "name": "leg_viewer_left",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.8548,
+    "bbox": [
+      322,
+      156,
+      657,
+      1297
+    ]
+  },
+  {
+    "name": "leg_viewer_right",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.7859,
+    "bbox": [
+      333,
+      85,
+      740,
+      1400
+    ]
+  },
+  {
+    "name": "ponytail",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.832,
+    "bbox": [
+      469,
+      9,
+      1018,
+      1111
+    ]
+  },
+  {
+    "name": "skirt_back",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.8978,
+    "bbox": [
+      159,
+      857,
+      996,
+      1290
+    ]
+  },
+  {
+    "name": "sleeve_tail_viewer_right",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.9039,
+    "bbox": [
+      269,
+      340,
+      961,
+      1185
+    ]
+  },
+  {
+    "name": "tassel",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.9266,
+    "bbox": [
+      223,
+      578,
+      905,
+      970
+    ]
+  },
+  {
+    "name": "torso",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent_fraction": 0.7484,
+    "bbox": [
+      23,
+      354,
+      1003,
+      1262
+    ]
+  }
+]

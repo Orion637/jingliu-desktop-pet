@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "kind": "cutout-parts",
+  "reference_canvas": [
+    1024,
+    1536
+  ],
+  "source": "../processed/jingliu_cutout_refined_high_ponytail.png",
+  "status": "parts-extracted-awaiting-rig-alignment",
+  "coordinate_convention": "viewer-left/right; approximate source-space placement; image pixels must be fitted using each file's alpha bounds",
+  "notes": [
+    "用户最终决定保留原紫色，不改颜色。",
+    "skirt_back 是紫色裙摆。",
+    "sleeve_tail_viewer_right 是画面右侧手臂衣袖的黑色月相延伸，parent 必须为 arm_viewer_right。",
+    "此文件只记录素材归属、建议位置和锚点，不包含动画或运行时代码。",
+    "部件含 AI 遮挡补全，不是逐像素无损复制；统一画布不代表已完成精确对齐。"
+  ],
+  "parts": [
+    {
+      "id": "head",
+      "file": "head.png",
+      "parent": "torso",
+      "z": 65,
+      "source_bounds_approx": [
+        72,
+        52,
+        774,
+        690
+      ],
+      "pivot_source_approx": [
+        440,
+        610
+      ]
+    },
+    {
+      "id": "ponytail",
+      "file": "ponytail.png",
+      "parent": "head",
+      "z": 10,
+      "source_bounds_approx": [
+        469,
+        9,
+        1018,
+        1111
+      ],
+      "pivot_source_approx": [
+        581,
+        65
+      ]
+    },
+    {
+      "id": "torso",
+      "file": "torso.png",
+      "parent": null,
+      "z": 40,
+      "source_bounds_approx": [
+        126,
+        610,
+        655,
+        1207
+      ],
+      "pivot_source_approx": [
+        437,
+        828
+      ]
+    },
+    {
+      "id": "arm_viewer_left",
+      "file": "arm_viewer_left.png",
+      "parent": "torso",
+      "z": 45,
+      "source_bounds_approx": [
+        114,
+        674,
+        353,
+        978
+      ],
+      "pivot_source_approx": [
+        302,
+        708
+      ]
+    },
+    {
+      "id": "arm_viewer_right",
+      "file": "arm_viewer_right.png",
+      "parent": "torso",
+      "z": 55,
+      "source_bounds_approx": [
+        403,
+        682,
+        708,
+        861
+      ],
+      "pivot_source_approx": [
+        654,
+        719
+      ]
+    },
+    {
+      "id": "skirt_back",
+      "file": "skirt_back.png",
+      "parent": "torso",
+      "z": 20,
+      "source_bounds_approx": [
+        199,
+        1042,
+        976,
+        1338
+      ],
+      "pivot_source_approx": [
+        417,
+        1020
+      ]
+    },
+    {
+      "id": "sleeve_tail_viewer_right",
+      "file": "sleeve_tail_viewer_right.png",
+      "parent": "arm_viewer_right",
+      "z": 30,
+      "source_bounds_approx": [
+        635,
+        784,
+        980,
+        1297
+      ],
+      "pivot_source_approx": [
+        662,
+        786
+      ]
+    },
+    {
+      "id": "leg_viewer_left",
+      "file": "leg_viewer_left.png",
+      "parent": "torso",
+      "z": 25,
+      "source_bounds_approx": [
+        257,
+        1058,
+        450,
+        1455
+      ],
+      "pivot_source_approx": [
+        356,
+        1090
+      ]
+    },
+    {
+      "id": "leg_viewer_right",
+      "file": "leg_viewer_right.png",
+      "parent": "torso",
+      "z": 26,
+      "source_bounds_approx": [
+        392,
+        1077,
+        566,
+        1523
+      ],
+      "pivot_source_approx": [
+        466,
+        1097
+      ]
+    },
+    {
+      "id": "tassel",
+      "file": "tassel.png",
+      "parent": "torso",
+      "z": 60,
+      "source_bounds_approx": [
+        466,
+        900,
+        638,
+        1034
+      ],
+      "pivot_source_approx": [
+        478,
+        924
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "sword_slender",
+      "file": "../weapons/sword_slender_chibi.png",
+      "parent": "arm_viewer_left"
+    },
+    {
+      "id": "sword_ice",
+      "file": "../weapons/sword_ice_chibi.png",
+      "parent": "arm_viewer_left"
+    }
+  ]
+}
